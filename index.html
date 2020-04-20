@@ -18,14 +18,16 @@
     />
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <title>Work Day Scheduler</title>
+    <title>Weather Dashboard</title>
   </head>
 
   <body>
+    <!-- Elements for the top header. -->
     <div class = "header-div">
       <h2 class = "width-100 text-center bg-dark text-light" id = "header-el">Weather Dashboard</h1>
     </div>
     <main class="row justify-space-between">
+    <!-- Creates card in which the form to submit city and search history are in. -->
       <div class="col-12 col-md-4">
         <div class="card mx-3">
           <h3 class="card-header bg-dark text-light">Enter City Name</h3>
@@ -38,8 +40,9 @@
           </div>
         </div>
       </div>
-
+      <!-- Right side of the page with weather and five day forecast. -->
       <div class="col-12 col-md-8 right-side">
+        <!-- Current day weather card.-->
         <div class = "card mx-3 p-3">
           <h3 class = "font-weight-bold city-date" id = "city-date"></h3>
           <span id = "icon-cloudy">
@@ -56,61 +59,62 @@
         <div class = "card mx-3 p-3 border-0">
         <h3 class = "font-weight-bold">5-Day Forecast</h3><br>
         <div class="row">
+            <!-- Five day forecast cards.-->
           <div class="column">
-            <div class="card p-3 mx-1 bg-primary text-white">
+            <div class="card p-3 mx-1 mb-1 bg-primary text-white">
               <h5 class = "five-day-date"></h5>
                <span>
-                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
-                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
-                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+                <i class="fas fa-cloud text-white five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-white five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-white five-day-rain" id = "five-day-rain"></i>
               </span><br>
               <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
               <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
             </div>
           </div>
           <div class="column">
-            <div class="card p-3 mx-1 bg-primary text-white">
+            <div class="card p-3 mx-1 mb-1 bg-primary text-white">
               <h5 class = "five-day-date"></h5>
               <span>
-                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
-                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
-                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+                <i class="fas fa-cloud text-white five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-white five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-white five-day-rain" id = "five-day-rain"></i>
               </span><br>
               <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
               <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
             </div>
           </div>
          <div class="column">
-            <div class="card p-3 mx-1 bg-primary text-white">
+            <div class="card p-3 mx-1 mb-1 bg-primary text-white">
               <h5 class = "five-day-date"></h5>
               <span>
-                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
-                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
-                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+                <i class="fas fa-cloud text-white five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-white five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-white five-day-rain" id = "five-day-rain"></i>
               </span><br>
               <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
               <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
             </div>
           </div>
           <div class="column">
-            <div class="card p-3 mx-1 bg-primary text-white">
+            <div class="card p-3 mx-1 mb-1 bg-primary text-white">
               <h5 class = "five-day-date"></h5>
               <span>
-                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
-                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
-                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+                <i class="fas fa-cloud text-white five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-white five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-white five-day-rain" id = "five-day-rain"></i>
               </span><br>
               <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
               <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
             </div>
           </div>
           <div class="column">
-            <div class="card p-3 mx-1 bg-primary text-white">
+            <div class="card p-3 mx-1 mb-1 bg-primary text-white">
               <h5 class = "five-day-date"></h5>
               <span>
-                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
-                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
-                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+                <i class="fas fa-cloud text-white five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-white five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-white five-day-rain" id = "five-day-rain"></i>
               </span><br>
               <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
               <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
