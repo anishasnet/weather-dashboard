@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
+    <!-- CDN links for Bootstrap, fontawesome, Google Fonts, and Open Iconic -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <div class = "header-div">
+      <h2 class = "width-100 text-center bg-dark text-light" id = "header-el">Weather Dashboard</h1>
+    </div>
+    <main class="row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card mx-3">
+          <h3 class="card-header bg-dark text-light">Enter City Name</h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label font-weight-bold" for="city">City</label><br>
+            <input name = "city" id = "city" type = "text" class = "form-input rounded" placeholder = "Enter city name" />
+            <button type="submit" class="btn-enter rounded enter-btn"><i class="fas fa-search"></i></button>
+          </form>
+          <div id = "list-cities">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-8 right-side">
+        <div class = "card mx-3 p-3">
+          <h3 class = "font-weight-bold city-date" id = "city-date"></h3>
+          <span id = "icon-cloudy">
+            <i class="fas fa-cloud text-secondary" id = "current-day-cloud"></i>
+            <i class="fas fa-sun text-warning" id = "current-day-sun"></i>
+            <i class="fas fa-cloud-showers-heavy text-info" id = "current-day-rain"></i>
+          </span>
+          <br><br>
+          <h5 class = "weather-card-specs font-weight-light">Temperature: <span id = "current-day-temp"></span>º F</h5><br>
+          <h5 class = "weather-card-specs font-weight-light">Humidity: <span id = "current-day-humidity"></span>%</h5><br>
+          <h5 class = "weather-card-specs font-weight-light">Wind Speed: <span id = "current-day-wind"></span> MPH</h5><br>
+          <h5 class = "weather-card-specs font-weight-light">UV index: <span class = "rounded text-center p-1" style = "width: 4rem;" id = "current-day-uv"></span></h5><br>
+        </div>
+        <div class = "card mx-3 p-3 border-0">
+        <h3 class = "font-weight-bold">5-Day Forecast</h3><br>
+        <div class="row">
+          <div class="column">
+            <div class="card p-3 mx-1 bg-primary text-white">
+              <h5 class = "five-day-date"></h5>
+               <span>
+                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+              </span><br>
+              <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
+              <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card p-3 mx-1 bg-primary text-white">
+              <h5 class = "five-day-date"></h5>
+              <span>
+                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+              </span><br>
+              <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
+              <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
+            </div>
+          </div>
+         <div class="column">
+            <div class="card p-3 mx-1 bg-primary text-white">
+              <h5 class = "five-day-date"></h5>
+              <span>
+                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+              </span><br>
+              <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
+              <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card p-3 mx-1 bg-primary text-white">
+              <h5 class = "five-day-date"></h5>
+              <span>
+                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+              </span><br>
+              <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
+              <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card p-3 mx-1 bg-primary text-white">
+              <h5 class = "five-day-date"></h5>
+              <span>
+                <i class="fas fa-cloud text-secondary five-day-cloud" id = "five-day-cloud"></i>
+                <i class="fas fa-sun text-warning five-day-sun" id = "five-day-sun"></i>
+                <i class="fas fa-cloud-showers-heavy text-info five-day-rain" id = "five-day-rain"></i>
+              </span><br>
+              <h6>Temp: <span class = "five-day-temp"></span>º F</h6>
+              <h6>Humidity: <span class = "five-day-humidity"></span>%</h6>
+            </div>
+          </div>
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
