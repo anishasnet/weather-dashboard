@@ -1,0 +1,20 @@
+#header-el {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.enter-btn {
+	background-color: #007bfe;
+	color: white;
+}
+.enter-btn:hover {
+	border-color: #007bfe;
+	background-color: white;
+	color: #007bfe;
+}
+
+.city-button {
+	background-color: white;
+	width: 100%;
+	text-align: left;
+}
